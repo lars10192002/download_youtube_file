@@ -1,14 +1,14 @@
-from flask import Flask,url_for,redirect
+from flask import Flask,render_template
+from flask_bootstrap import Bootstrap
 from pytube import YouTube
 
-# pip install pytube3
 
 app = Flask(__name__)
-
+Bootstrap(app)
 
 @app.route('/')
 def index():
-    return 'setup webpage !'
+    return render_template('index.html')
 
 def download_video(URL):
     YouTube(URL).streams.first().download()

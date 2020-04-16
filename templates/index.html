@@ -1,0 +1,18 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+  
+
+  <div class="container">
+    <h1>Hello, Bootstrap</h1>
+    <label for="basic-url">Your youtube URL : (ex : https://www.youtube.com/watch?v=4E7N7W1lUkU)</label>
+    <form action="/index">
+      <div class="form-group">
+        <input type="text" class="form-control" id="basic-url" placeholder="Default form control" name="text1">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+
+{% endblock %}

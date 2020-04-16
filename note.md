@@ -1,3 +1,19 @@
+# install lib
+- pip install pytube3
+- conda install -c conda-forge flask-bootstrap
+
+# run code
+```
+export FLASK_APP=main.py
+flask run
+```
+or
+
+```
+python main.py
+```
+
+
 # pytube3 doc
 
 ## pytube3
