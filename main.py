@@ -1,6 +1,10 @@
 from pytube import YouTube
 # pip install pytube3
 
-URL = 'https://www.youtube.com/watch?v=NyBSv5A5IYA&list=PLkDDOXUP5D2jXIWfqrgRrLLSjDYX-KDDL&index=2&t=0s'
-YouTube(URL).streams.first().download()
 
+def download_video(URL):
+    YouTube(URL).streams.first().download()
+
+
+URL = 'https://www.youtube.com/watch?time_continue=1&v=Ep3DcTs-L60&feature=emb_logo'
+download_video(URL)
